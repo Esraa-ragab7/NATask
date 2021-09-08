@@ -18,6 +18,7 @@
 		F237D94726E91046002EC493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F237D94526E91046002EC493 /* LaunchScreen.storyboard */; };
 		F237D95226E91046002EC493 /* NATaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D95126E91046002EC493 /* NATaskTests.swift */; };
 		F237D95D26E91046002EC493 /* NATaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D95C26E91046002EC493 /* NATaskUITests.swift */; };
+		F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D97326E91F81002EC493 /* IngredientInputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		F237D95826E91046002EC493 /* NATaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NATaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237D95C26E91046002EC493 /* NATaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATaskUITests.swift; sourceTree = "<group>"; };
 		F237D95E26E91046002EC493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F237D97326E91F81002EC493 /* IngredientInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInputViewController.swift; sourceTree = "<group>"; };
 		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 		F237D96A26E91067002EC493 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F237D96F26E91EE8002EC493 /* IngredientInput */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -205,8 +208,41 @@
 		F237D96E26E910E4002EC493 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F237D97526E9800D002EC493 /* Extensions */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F237D96F26E91EE8002EC493 /* IngredientInput */ = {
+			isa = PBXGroup;
+			children = (
+				F237D97226E91F4C002EC493 /* View */,
+				F237D97126E91F3F002EC493 /* ViewModal */,
+				F237D97026E91F38002EC493 /* Modal */,
+			);
+			path = IngredientInput;
+			sourceTree = "<group>";
+		};
+		F237D97026E91F38002EC493 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F237D97126E91F3F002EC493 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		F237D97226E91F4C002EC493 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F237D97326E91F81002EC493 /* IngredientInputViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +485,7 @@
 			files = (
 				F237D93F26E91043002EC493 /* ViewController.swift in Sources */,
 				F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */,
+				F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */,
 				F237D93D26E91043002EC493 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
