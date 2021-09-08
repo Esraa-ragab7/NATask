@@ -99,18 +99,14 @@
 		F237D93926E91043002EC493 /* NATask */ = {
 			isa = PBXGroup;
 			children = (
+				F237D94826E91046002EC493 /* Info.plist */,
 				F237D96A26E91067002EC493 /* Scenes */,
 				F237D96D26E910D8002EC493 /* NetworkLayer */,
 				F237D96E26E910E4002EC493 /* Helpers */,
 				F237D96C26E910C2002EC493 /* Supporting Files */,
 				F237D96B26E91081002EC493 /* AppDelegate */,
-				F237D93A26E91043002EC493 /* AppDelegate.swift */,
-				F237D93C26E91043002EC493 /* SceneDelegate.swift */,
 				F237D93E26E91043002EC493 /* ViewController.swift */,
 				F237D94026E91043002EC493 /* Main.storyboard */,
-				F237D94326E91046002EC493 /* Assets.xcassets */,
-				F237D94526E91046002EC493 /* LaunchScreen.storyboard */,
-				F237D94826E91046002EC493 /* Info.plist */,
 			);
 			path = NATask;
 			sourceTree = "<group>";
@@ -143,6 +139,8 @@
 		F237D96B26E91081002EC493 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				F237D93A26E91043002EC493 /* AppDelegate.swift */,
+				F237D93C26E91043002EC493 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -150,6 +148,8 @@
 		F237D96C26E910C2002EC493 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F237D94326E91046002EC493 /* Assets.xcassets */,
+				F237D94526E91046002EC493 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
