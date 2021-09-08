@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34757D0934E05BB093656A20 /* Pods_NATask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4999DD954DB16363DA0F71 /* Pods_NATask.framework */; };
+		B426AD74732E327B0F7AE39C /* Pods_NATaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AD93849169C60228331952 /* Pods_NATaskTests.framework */; };
+		E447A30776EE671A4AE0D9B0 /* Pods_NATask_NATaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008EBF9A897B6F0C7D88D50E /* Pods_NATask_NATaskUITests.framework */; };
 		F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93A26E91043002EC493 /* AppDelegate.swift */; };
 		F237D93D26E91043002EC493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93C26E91043002EC493 /* SceneDelegate.swift */; };
 		F237D93F26E91043002EC493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93E26E91043002EC493 /* ViewController.swift */; };
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008EBF9A897B6F0C7D88D50E /* Pods_NATask_NATaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NATask_NATaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4999DD954DB16363DA0F71 /* Pods_NATask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NATask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		382985D4B956D86E1598314B /* Pods-NATaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATaskTests.release.xcconfig"; path = "Target Support Files/Pods-NATaskTests/Pods-NATaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C8D8ECBA30F9F4518AEB47B /* Pods-NATaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATaskTests.debug.xcconfig"; path = "Target Support Files/Pods-NATaskTests/Pods-NATaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63AD93849169C60228331952 /* Pods_NATaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NATaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6749E3CD0403F0A0C11DC6C7 /* Pods-NATask-NATaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask-NATaskUITests.release.xcconfig"; path = "Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80AD75212134D532B535FB5E /* Pods-NATask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.release.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.release.xcconfig"; sourceTree = "<group>"; };
+		ADA05BD2D48601685DA1C180 /* Pods-NATask-NATaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask-NATaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F237D93726E91043002EC493 /* NATask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NATask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237D93A26E91043002EC493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F237D93C26E91043002EC493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		F237D95826E91046002EC493 /* NATaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NATaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237D95C26E91046002EC493 /* NATaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NATaskUITests.swift; sourceTree = "<group>"; };
 		F237D95E26E91046002EC493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34757D0934E05BB093656A20 /* Pods_NATask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B426AD74732E327B0F7AE39C /* Pods_NATaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E447A30776EE671A4AE0D9B0 /* Pods_NATask_NATaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8DC3639908CC136244FD92F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A4999DD954DB16363DA0F71 /* Pods_NATask.framework */,
+				008EBF9A897B6F0C7D88D50E /* Pods_NATask_NATaskUITests.framework */,
+				63AD93849169C60228331952 /* Pods_NATaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8A1CC7DA311B61CA657FBDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */,
+				80AD75212134D532B535FB5E /* Pods-NATask.release.xcconfig */,
+				ADA05BD2D48601685DA1C180 /* Pods-NATask-NATaskUITests.debug.xcconfig */,
+				6749E3CD0403F0A0C11DC6C7 /* Pods-NATask-NATaskUITests.release.xcconfig */,
+				3C8D8ECBA30F9F4518AEB47B /* Pods-NATaskTests.debug.xcconfig */,
+				382985D4B956D86E1598314B /* Pods-NATaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F237D92E26E91043002EC493 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				F237D95026E91046002EC493 /* NATaskTests */,
 				F237D95B26E91046002EC493 /* NATaskUITests */,
 				F237D93826E91043002EC493 /* Products */,
+				C8A1CC7DA311B61CA657FBDD /* Pods */,
+				B8DC3639908CC136244FD92F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F237D96126E91046002EC493 /* Build configuration list for PBXNativeTarget "NATask" */;
 			buildPhases = (
+				BD8C5E135D8F707F8A3FE397 /* [CP] Check Pods Manifest.lock */,
 				F237D93326E91043002EC493 /* Sources */,
 				F237D93426E91043002EC493 /* Frameworks */,
 				F237D93526E91043002EC493 /* Resources */,
+				7453CA7CB439321EE92F44B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F237D96426E91046002EC493 /* Build configuration list for PBXNativeTarget "NATaskTests" */;
 			buildPhases = (
+				D660E315D8861A09344EE663 /* [CP] Check Pods Manifest.lock */,
 				F237D94926E91046002EC493 /* Sources */,
 				F237D94A26E91046002EC493 /* Frameworks */,
 				F237D94B26E91046002EC493 /* Resources */,
@@ -210,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F237D96726E91046002EC493 /* Build configuration list for PBXNativeTarget "NATaskUITests" */;
 			buildPhases = (
+				565FD1478027E6CBA0A10FF1 /* [CP] Check Pods Manifest.lock */,
 				F237D95426E91046002EC493 /* Sources */,
 				F237D95526E91046002EC493 /* Frameworks */,
 				F237D95626E91046002EC493 /* Resources */,
+				5011AE12F9E5A0BA2355281A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +338,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5011AE12F9E5A0BA2355281A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		565FD1478027E6CBA0A10FF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NATask-NATaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7453CA7CB439321EE92F44B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NATask/Pods-NATask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NATask/Pods-NATask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NATask/Pods-NATask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD8C5E135D8F707F8A3FE397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NATask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D660E315D8861A09344EE663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NATaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F237D93326E91043002EC493 /* Sources */ = {
@@ -473,6 +622,7 @@
 		};
 		F237D96226E91046002EC493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +642,7 @@
 		};
 		F237D96326E91046002EC493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80AD75212134D532B535FB5E /* Pods-NATask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,6 +662,7 @@
 		};
 		F237D96526E91046002EC493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8D8ECBA30F9F4518AEB47B /* Pods-NATaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +685,7 @@
 		};
 		F237D96626E91046002EC493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382985D4B956D86E1598314B /* Pods-NATaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +708,7 @@
 		};
 		F237D96826E91046002EC493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA05BD2D48601685DA1C180 /* Pods-NATask-NATaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +729,7 @@
 		};
 		F237D96926E91046002EC493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6749E3CD0403F0A0C11DC6C7 /* Pods-NATask-NATaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
