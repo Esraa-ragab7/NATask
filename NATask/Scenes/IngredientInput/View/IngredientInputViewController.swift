@@ -22,9 +22,11 @@ class IngredientInputViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        addTapGestureToBackgroundView()
         bind()
     }
     
+    // MARK: - Bind Method
     func bind() {
         inputTextView.rx.text.orEmpty.asObservable()
             .bind(to: ingredientInputViewModal.inputText)
@@ -46,6 +48,15 @@ class IngredientInputViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
     }
-    
 }
 
+extension IngredientInputViewController {
+    func addTapGestureToBackgroundView() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap) // Add gesture recognizer to background view
+    }
+    
+    @objc func handleTap() {
+        inputTextView.resignFirstResponder() // dismiss keyoard
+    }
+}
