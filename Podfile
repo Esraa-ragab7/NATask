@@ -7,6 +7,8 @@ target 'NATask' do
     pod 'RxSwift', '6.2.0'
     pod 'RxCocoa', '6.2.0'
     pod 'Alamofire'
+    pod 'IQKeyboardManagerSwift'
+
   # Pods for NATask
 
   target 'NATaskTests' do
