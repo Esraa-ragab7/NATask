@@ -35,7 +35,7 @@ class IngredientInputViewController: UIViewController {
         analyzeButton.rx.tap
             .subscribe(onNext: { [weak self](_) in
                 guard let self = self else { return }
-                self.ingredientInputViewModal.analyzeText()
+                self.ingredientInputViewModal.analyzeText(view: self)
             }).disposed(by: disposeBag)
         
         ingredientInputViewModal.isAnalyzeButtonEnabled.bind(to: analyzeButton.rx.isEnabled).disposed(by: disposeBag)
@@ -48,6 +48,7 @@ class IngredientInputViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
     }
+    
 }
 
 extension IngredientInputViewController {

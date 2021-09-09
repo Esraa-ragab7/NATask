@@ -24,7 +24,8 @@ final class IngredientInputViewModal {
         }
     }
     
-    func analyzeText() {
+    func analyzeText(view: UIViewController) {
+        loadingBehavior.accept(true)
         let ingredientsByLines = inputText.value.split(separator: "\n")
         DispatchQueue.global(qos: .background).async { [weak self] in
             guard let self = self else { return }
@@ -40,9 +41,19 @@ final class IngredientInputViewModal {
                 }
             }
             self.myGroup.notify(queue: .main) {
-                print(ingredients)
+                self.loadingBehavior.accept(false)
+                self.navigateToIngredientListDetailsViewController(view: view, ingredients: ingredients)
             }
         }
+    }
+    
+    func navigateToIngredientListDetailsViewController(view: UIViewController, ingredients: [IngredientModal]) {
+        let ingredientListDetailsViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "IngredientListDetailsViewController")
+        if let ingredientListDetailsViewController = ingredientListDetailsViewController as? IngredientListDetailsViewController {
+            ingredientListDetailsViewController.ingredientLisrDetailsViewModal = IngredientLisrDetailsViewModal(ingredients: ingredients)
+        }
+        ingredientListDetailsViewController.modalPresentationStyle = .fullScreen
+        view.navigationController?.pushViewController(ingredientListDetailsViewController, animated: true)
     }
     
 }
