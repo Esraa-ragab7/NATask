@@ -11,7 +11,6 @@
 		B426AD74732E327B0F7AE39C /* Pods_NATaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AD93849169C60228331952 /* Pods_NATaskTests.framework */; };
 		E447A30776EE671A4AE0D9B0 /* Pods_NATask_NATaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008EBF9A897B6F0C7D88D50E /* Pods_NATask_NATaskUITests.framework */; };
 		F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93A26E91043002EC493 /* AppDelegate.swift */; };
-		F237D93D26E91043002EC493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93C26E91043002EC493 /* SceneDelegate.swift */; };
 		F237D93F26E91043002EC493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93E26E91043002EC493 /* ViewController.swift */; };
 		F237D94226E91043002EC493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F237D94026E91043002EC493 /* Main.storyboard */; };
 		F237D94426E91046002EC493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F237D94326E91046002EC493 /* Assets.xcassets */; };
@@ -53,7 +52,6 @@
 		ADA05BD2D48601685DA1C180 /* Pods-NATask-NATaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask-NATaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F237D93726E91043002EC493 /* NATask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NATask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237D93A26E91043002EC493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F237D93C26E91043002EC493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F237D93E26E91043002EC493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F237D94126E91043002EC493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F237D94326E91046002EC493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				F237D93A26E91043002EC493 /* AppDelegate.swift */,
-				F237D93C26E91043002EC493 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -516,7 +513,6 @@
 				F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */,
 				F237D97726E9809C002EC493 /* UIView+Extension.swift in Sources */,
 				F237D97926E98538002EC493 /* IngredientInputViewModal.swift in Sources */,
-				F237D93D26E91043002EC493 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
