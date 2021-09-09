@@ -22,6 +22,9 @@
 		F237D97926E98538002EC493 /* IngredientInputViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D97826E98538002EC493 /* IngredientInputViewModal.swift */; };
 		F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D97B26E98EF5002EC493 /* LoaderView.swift */; };
 		F237D97E26E98EF5002EC493 /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F237D97C26E98EF5002EC493 /* LoaderView.xib */; };
+		F237D98026E998D5002EC493 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D97F26E998D5002EC493 /* APIClient.swift */; };
+		F237D98226E998E3002EC493 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98126E998E3002EC493 /* APIRouter.swift */; };
+		F237D98426E998F9002EC493 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98326E998F9002EC493 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		F237D97826E98538002EC493 /* IngredientInputViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInputViewModal.swift; sourceTree = "<group>"; };
 		F237D97B26E98EF5002EC493 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		F237D97C26E98EF5002EC493 /* LoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		F237D97F26E998D5002EC493 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F237D98126E998E3002EC493 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		F237D98326E998F9002EC493 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +211,9 @@
 		F237D96D26E910D8002EC493 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				F237D97F26E998D5002EC493 /* APIClient.swift */,
+				F237D98126E998E3002EC493 /* APIRouter.swift */,
+				F237D98326E998F9002EC493 /* Constants.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -508,11 +517,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F237D93F26E91043002EC493 /* ViewController.swift in Sources */,
+				F237D98026E998D5002EC493 /* APIClient.swift in Sources */,
 				F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */,
 				F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */,
 				F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */,
+				F237D98226E998E3002EC493 /* APIRouter.swift in Sources */,
 				F237D97726E9809C002EC493 /* UIView+Extension.swift in Sources */,
 				F237D97926E98538002EC493 /* IngredientInputViewModal.swift in Sources */,
+				F237D98426E998F9002EC493 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
