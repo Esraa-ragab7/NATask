@@ -22,8 +22,12 @@ class IngredientInputViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        addTapGestureToBackgroundView()
+        changeBackColor()
         bind()
+    }
+    
+    func changeBackColor() {
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     // MARK: - Bind Method
@@ -49,15 +53,4 @@ class IngredientInputViewController: UIViewController {
         }).disposed(by: disposeBag)
     }
     
-}
-
-extension IngredientInputViewController {
-    func addTapGestureToBackgroundView() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        view.addGestureRecognizer(tap) // Add gesture recognizer to background view
-    }
-    
-    @objc func handleTap() {
-        inputTextView.resignFirstResponder() // dismiss keyoard
-    }
 }
