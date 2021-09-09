@@ -27,6 +27,8 @@
 		F237D98426E998F9002EC493 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98326E998F9002EC493 /* Constants.swift */; };
 		F237D98626E9A342002EC493 /* IngredientModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98526E9A342002EC493 /* IngredientModal.swift */; };
 		F237D98826E9A657002EC493 /* FactsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98726E9A657002EC493 /* FactsModal.swift */; };
+		F237D99026E9DDA1002EC493 /* IngredientListDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98F26E9DDA1002EC493 /* IngredientListDetailsViewController.swift */; };
+		F237D99226E9DDB0002EC493 /* IngredientListDetailsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		F237D98326E998F9002EC493 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F237D98526E9A342002EC493 /* IngredientModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModal.swift; sourceTree = "<group>"; };
 		F237D98726E9A657002EC493 /* FactsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModal.swift; sourceTree = "<group>"; };
+		F237D98F26E9DDA1002EC493 /* IngredientListDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListDetailsViewController.swift; sourceTree = "<group>"; };
+		F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListDetailsViewModal.swift; sourceTree = "<group>"; };
 		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,7 @@
 		F237D96A26E91067002EC493 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F237D98A26E9DD47002EC493 /* IngredientListDetails */,
 				F237D96F26E91EE8002EC493 /* IngredientInput */,
 			);
 			path = Scenes;
@@ -281,6 +286,39 @@
 				F237D97C26E98EF5002EC493 /* LoaderView.xib */,
 			);
 			path = LoaderView;
+			sourceTree = "<group>";
+		};
+		F237D98A26E9DD47002EC493 /* IngredientListDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F237D98B26E9DD60002EC493 /* View */,
+				F237D98E26E9DD7B002EC493 /* ViewModal */,
+				F237D98D26E9DD74002EC493 /* Modal */,
+			);
+			path = IngredientListDetails;
+			sourceTree = "<group>";
+		};
+		F237D98B26E9DD60002EC493 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F237D98F26E9DDA1002EC493 /* IngredientListDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F237D98D26E9DD74002EC493 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F237D98E26E9DD7B002EC493 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */,
+			);
+			path = ViewModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,10 +566,12 @@
 				F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */,
 				F237D98826E9A657002EC493 /* FactsModal.swift in Sources */,
 				F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */,
+				F237D99226E9DDB0002EC493 /* IngredientListDetailsViewModal.swift in Sources */,
 				F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */,
 				F237D98226E998E3002EC493 /* APIRouter.swift in Sources */,
 				F237D97726E9809C002EC493 /* UIView+Extension.swift in Sources */,
 				F237D97926E98538002EC493 /* IngredientInputViewModal.swift in Sources */,
+				F237D99026E9DDA1002EC493 /* IngredientListDetailsViewController.swift in Sources */,
 				F237D98426E998F9002EC493 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
