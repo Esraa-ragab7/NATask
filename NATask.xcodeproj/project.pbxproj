@@ -29,6 +29,8 @@
 		F237D98826E9A657002EC493 /* FactsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98726E9A657002EC493 /* FactsModal.swift */; };
 		F237D99026E9DDA1002EC493 /* IngredientListDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98F26E9DDA1002EC493 /* IngredientListDetailsViewController.swift */; };
 		F237D99226E9DDB0002EC493 /* IngredientListDetailsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */; };
+		F237D99626EA5B10002EC493 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D99426EA5B10002EC493 /* IngredientTableViewCell.swift */; };
+		F237D99726EA5B10002EC493 /* IngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F237D99526EA5B10002EC493 /* IngredientTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		F237D98726E9A657002EC493 /* FactsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModal.swift; sourceTree = "<group>"; };
 		F237D98F26E9DDA1002EC493 /* IngredientListDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListDetailsViewController.swift; sourceTree = "<group>"; };
 		F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListDetailsViewModal.swift; sourceTree = "<group>"; };
+		F237D99426EA5B10002EC493 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		F237D99526EA5B10002EC493 /* IngredientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientTableViewCell.xib; sourceTree = "<group>"; };
 		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +295,7 @@
 		F237D98A26E9DD47002EC493 /* IngredientListDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F237D99326EA5AF1002EC493 /* Cells */,
 				F237D98B26E9DD60002EC493 /* View */,
 				F237D98E26E9DD7B002EC493 /* ViewModal */,
 				F237D98D26E9DD74002EC493 /* Modal */,
@@ -319,6 +324,15 @@
 				F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */,
 			);
 			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		F237D99326EA5AF1002EC493 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F237D99426EA5B10002EC493 /* IngredientTableViewCell.swift */,
+				F237D99526EA5B10002EC493 /* IngredientTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F237D99726EA5B10002EC493 /* IngredientTableViewCell.xib in Resources */,
 				F237D94726E91046002EC493 /* LaunchScreen.storyboard in Resources */,
 				F237D97E26E98EF5002EC493 /* LoaderView.xib in Resources */,
 				F237D94426E91046002EC493 /* Assets.xcassets in Resources */,
@@ -562,6 +577,7 @@
 			files = (
 				F237D98626E9A342002EC493 /* IngredientModal.swift in Sources */,
 				F237D93F26E91043002EC493 /* ViewController.swift in Sources */,
+				F237D99626EA5B10002EC493 /* IngredientTableViewCell.swift in Sources */,
 				F237D98026E998D5002EC493 /* APIClient.swift in Sources */,
 				F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */,
 				F237D98826E9A657002EC493 /* FactsModal.swift in Sources */,
