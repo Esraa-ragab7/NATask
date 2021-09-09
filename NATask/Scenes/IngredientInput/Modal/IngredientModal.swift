@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct IngredientModal {
+struct IngredientModal: Codable {
     var ingredientText: String?
     let uri : String?
     let calories : Int?
@@ -19,16 +19,4 @@ struct IngredientModal {
     let healthLabels: [String]?
     let dietLabels: [String]?
     
-    init(ingredientText: String) {
-        self.ingredientText = ingredientText
-        uri = nil
-        calories = nil
-        totalWeight = nil
-        totalNutrients = nil
-        totalDaily = nil
-        totalNutrientsKCal = nil
-        cautions = nil
-        healthLabels = nil
-        dietLabels = nil
-    }
 }
