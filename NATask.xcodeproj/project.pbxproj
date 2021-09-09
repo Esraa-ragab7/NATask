@@ -31,6 +31,10 @@
 		F237D99226E9DDB0002EC493 /* IngredientListDetailsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */; };
 		F237D99626EA5B10002EC493 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D99426EA5B10002EC493 /* IngredientTableViewCell.swift */; };
 		F237D99726EA5B10002EC493 /* IngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F237D99526EA5B10002EC493 /* IngredientTableViewCell.xib */; };
+		F2CE04E926EA75D2004A4EEB /* FactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE04E726EA75D2004A4EEB /* FactsTableViewCell.swift */; };
+		F2CE04EA26EA75D2004A4EEB /* FactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CE04E826EA75D2004A4EEB /* FactsTableViewCell.xib */; };
+		F2CE04EC26EA78CB004A4EEB /* TotleNutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE04EB26EA78CB004A4EEB /* TotleNutritionViewController.swift */; };
+		F2CE04EE26EA79C4004A4EEB /* TotalNutritionViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE04ED26EA79C4004A4EEB /* TotalNutritionViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		F237D99126E9DDB0002EC493 /* IngredientListDetailsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListDetailsViewModal.swift; sourceTree = "<group>"; };
 		F237D99426EA5B10002EC493 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		F237D99526EA5B10002EC493 /* IngredientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientTableViewCell.xib; sourceTree = "<group>"; };
+		F2CE04E726EA75D2004A4EEB /* FactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsTableViewCell.swift; sourceTree = "<group>"; };
+		F2CE04E826EA75D2004A4EEB /* FactsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsTableViewCell.xib; sourceTree = "<group>"; };
+		F2CE04EB26EA78CB004A4EEB /* TotleNutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotleNutritionViewController.swift; sourceTree = "<group>"; };
+		F2CE04ED26EA79C4004A4EEB /* TotalNutritionViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutritionViewModal.swift; sourceTree = "<group>"; };
 		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,13 +174,13 @@
 			isa = PBXGroup;
 			children = (
 				F237D94826E91046002EC493 /* Info.plist */,
+				F2CE04EF26EA8D7E004A4EEB /* Storybords */,
 				F237D96A26E91067002EC493 /* Scenes */,
 				F237D96D26E910D8002EC493 /* NetworkLayer */,
 				F237D96E26E910E4002EC493 /* Helpers */,
 				F237D96C26E910C2002EC493 /* Supporting Files */,
 				F237D96B26E91081002EC493 /* AppDelegate */,
 				F237D93E26E91043002EC493 /* ViewController.swift */,
-				F237D94026E91043002EC493 /* Main.storyboard */,
 			);
 			path = NATask;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 		F237D96A26E91067002EC493 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F2CE04E226EA750D004A4EEB /* TotalNutritionFacts */,
 				F237D98A26E9DD47002EC493 /* IngredientListDetails */,
 				F237D96F26E91EE8002EC493 /* IngredientInput */,
 			);
@@ -335,6 +344,57 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		F2CE04E226EA750D004A4EEB /* TotalNutritionFacts */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE04E626EA75BB004A4EEB /* Cells */,
+				F2CE04E526EA75B5004A4EEB /* View */,
+				F2CE04E426EA75A8004A4EEB /* ViewModal */,
+				F2CE04E326EA75A1004A4EEB /* Modal */,
+			);
+			path = TotalNutritionFacts;
+			sourceTree = "<group>";
+		};
+		F2CE04E326EA75A1004A4EEB /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F2CE04E426EA75A8004A4EEB /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE04ED26EA79C4004A4EEB /* TotalNutritionViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		F2CE04E526EA75B5004A4EEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE04EB26EA78CB004A4EEB /* TotleNutritionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2CE04E626EA75BB004A4EEB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE04E726EA75D2004A4EEB /* FactsTableViewCell.swift */,
+				F2CE04E826EA75D2004A4EEB /* FactsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F2CE04EF26EA8D7E004A4EEB /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				F237D94026E91043002EC493 /* Main.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,6 +508,7 @@
 				F237D97E26E98EF5002EC493 /* LoaderView.xib in Resources */,
 				F237D94426E91046002EC493 /* Assets.xcassets in Resources */,
 				F237D94226E91043002EC493 /* Main.storyboard in Resources */,
+				F2CE04EA26EA75D2004A4EEB /* FactsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CE04EC26EA78CB004A4EEB /* TotleNutritionViewController.swift in Sources */,
 				F237D98626E9A342002EC493 /* IngredientModal.swift in Sources */,
 				F237D93F26E91043002EC493 /* ViewController.swift in Sources */,
 				F237D99626EA5B10002EC493 /* IngredientTableViewCell.swift in Sources */,
@@ -584,11 +646,13 @@
 				F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */,
 				F237D99226E9DDB0002EC493 /* IngredientListDetailsViewModal.swift in Sources */,
 				F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */,
+				F2CE04E926EA75D2004A4EEB /* FactsTableViewCell.swift in Sources */,
 				F237D98226E998E3002EC493 /* APIRouter.swift in Sources */,
 				F237D97726E9809C002EC493 /* UIView+Extension.swift in Sources */,
 				F237D97926E98538002EC493 /* IngredientInputViewModal.swift in Sources */,
 				F237D99026E9DDA1002EC493 /* IngredientListDetailsViewController.swift in Sources */,
 				F237D98426E998F9002EC493 /* Constants.swift in Sources */,
+				F2CE04EE26EA79C4004A4EEB /* TotalNutritionViewModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
