@@ -25,6 +25,8 @@
 		F237D98026E998D5002EC493 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D97F26E998D5002EC493 /* APIClient.swift */; };
 		F237D98226E998E3002EC493 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98126E998E3002EC493 /* APIRouter.swift */; };
 		F237D98426E998F9002EC493 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98326E998F9002EC493 /* Constants.swift */; };
+		F237D98626E9A342002EC493 /* IngredientModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98526E9A342002EC493 /* IngredientModal.swift */; };
+		F237D98826E9A657002EC493 /* FactsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D98726E9A657002EC493 /* FactsModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		F237D97F26E998D5002EC493 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		F237D98126E998E3002EC493 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		F237D98326E998F9002EC493 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F237D98526E9A342002EC493 /* IngredientModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModal.swift; sourceTree = "<group>"; };
+		F237D98726E9A657002EC493 /* FactsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsModal.swift; sourceTree = "<group>"; };
 		FE2DEA4764B096CB471EE5FF /* Pods-NATask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.debug.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,6 +244,8 @@
 		F237D97026E91F38002EC493 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				F237D98526E9A342002EC493 /* IngredientModal.swift */,
+				F237D98726E9A657002EC493 /* FactsModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -516,9 +522,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F237D98626E9A342002EC493 /* IngredientModal.swift in Sources */,
 				F237D93F26E91043002EC493 /* ViewController.swift in Sources */,
 				F237D98026E998D5002EC493 /* APIClient.swift in Sources */,
 				F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */,
+				F237D98826E9A657002EC493 /* FactsModal.swift in Sources */,
 				F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */,
 				F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */,
 				F237D98226E998E3002EC493 /* APIRouter.swift in Sources */,
