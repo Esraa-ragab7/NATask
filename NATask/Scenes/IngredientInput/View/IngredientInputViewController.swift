@@ -6,24 +6,46 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class IngredientInputViewController: UIViewController {
-
+    
+    // MARK: - Outlets
+    @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var analyzeButton: UIButton!
+    
+    // MARK: - Properties
+    private var ingredientInputViewModal = IngredientInputViewModal()
+    private let disposeBag = DisposeBag()
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        bind()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func bind() {
+        inputTextView.rx.text.orEmpty.asObservable()
+            .bind(to: ingredientInputViewModal.inputText)
+            .disposed(by: disposeBag)
+        
+        analyzeButton.rx.tap
+            .subscribe(onNext: { [weak self](_) in
+                guard let self = self else { return }
+                self.ingredientInputViewModal.analyzeText()
+            }).disposed(by: disposeBag)
+        
+        ingredientInputViewModal.isAnalyzeButtonEnabled.bind(to: analyzeButton.rx.isEnabled).disposed(by: disposeBag)
+        
+        ingredientInputViewModal.loadingBehavior.subscribe(onNext: { (isLoading) in
+            if isLoading {
+                self.showAppLoader()
+            } else {
+                self.hideAppLoader()
+            }
+        }).disposed(by: disposeBag)
     }
-    */
-
+    
 }
+
