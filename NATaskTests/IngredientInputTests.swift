@@ -6,27 +6,56 @@
 //
 
 import XCTest
+@testable import NATask
 
 class IngredientInputTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+    
+    var inputText = "2 apples \n 1 orange"
+    var ingredientInputViewController: IngredientInputViewController!
+    
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // MARK: - Case1 Success
+        initIngredientInputViewController()
+        addInputTextAndCheckIfAnalyzeButtonIsEnabled()
+        initialStateForAnalyzeButtonTest()
+        callAnalyzeAPI()
+        
+        // MARK: - Case2 Failure
+        /*  inputText = ""
+         initIngredientInputViewController()
+         addInputTextAndCheckIfAnalyzeButtonIsEnabled()
+         initialStateForAnalyzeButtonTest()
+         callAnalyzeAPI()  */
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func initIngredientInputViewController() {
+        ingredientInputViewController = (UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "IngredientInputViewController") as! IngredientInputViewController)
+        let _ = ingredientInputViewController.view
+    }
+    
+    func initialStateForAnalyzeButtonTest() {
+        XCTAssertTrue(!ingredientInputViewController.inputTextView.text.isEmpty && ingredientInputViewController.analyzeButton.isEnabled,"Input Text is empty!")
+    }
+    
+    func addInputTextAndCheckIfAnalyzeButtonIsEnabled() {
+        ingredientInputViewController.inputTextView.text = inputText
+        ingredientInputViewController.bind()
+        XCTAssertTrue(ingredientInputViewController.analyzeButton.isEnabled,"Analyze Button is Disabled!")
+    }
+    
+    func callAnalyzeAPI() {
+        if !ingredientInputViewController.analyzeButton.isEnabled {
+            XCTFail("Input Text is empty!")
+        }
+        let expectation = expectation(description: "Analyze")
+        APIClient.getNutritionDetails(text: ingredientInputViewController.inputTextView.text) { res, error, massage  in
+            XCTAssert(res != nil, "API Failed")
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 7){ error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
         }
     }
-
 }
