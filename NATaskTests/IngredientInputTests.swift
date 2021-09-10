@@ -21,11 +21,13 @@ class IngredientInputTests: XCTestCase {
         callAnalyzeAPI()
         
         // MARK: - Case2 Failure
-        /*  inputText = ""
+        /*
+            inputText = ""
          initIngredientInputViewController()
          addInputTextAndCheckIfAnalyzeButtonIsEnabled()
          initialStateForAnalyzeButtonTest()
-         callAnalyzeAPI()  */
+         callAnalyzeAPI()
+         */
     }
     
     func initIngredientInputViewController() {
