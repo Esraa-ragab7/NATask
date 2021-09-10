@@ -12,6 +12,9 @@
 		E447A30776EE671A4AE0D9B0 /* Pods_NATask_NATaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008EBF9A897B6F0C7D88D50E /* Pods_NATask_NATaskUITests.framework */; };
 		F210D2AD26EAE4B0008772B5 /* Connnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2AC26EAE4B0008772B5 /* Connnectivity.swift */; };
 		F210D2AF26EAE5CD008772B5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2AE26EAE5CD008772B5 /* UIViewController+Extension.swift */; };
+		F210D2B326EB067A008772B5 /* IngredientInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2B226EB067A008772B5 /* IngredientInputTests.swift */; };
+		F210D2B726EB1B4E008772B5 /* IngredientListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2B626EB1B4E008772B5 /* IngredientListTests.swift */; };
+		F210D2B926EB1E2C008772B5 /* TotalNutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2B826EB1E2C008772B5 /* TotalNutritionTests.swift */; };
 		F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93A26E91043002EC493 /* AppDelegate.swift */; };
 		F237D93F26E91043002EC493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93E26E91043002EC493 /* ViewController.swift */; };
 		F237D94226E91043002EC493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F237D94026E91043002EC493 /* Main.storyboard */; };
@@ -67,6 +70,9 @@
 		ADA05BD2D48601685DA1C180 /* Pods-NATask-NATaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask-NATaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F210D2AC26EAE4B0008772B5 /* Connnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connnectivity.swift; sourceTree = "<group>"; };
 		F210D2AE26EAE5CD008772B5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F210D2B226EB067A008772B5 /* IngredientInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientInputTests.swift; sourceTree = "<group>"; };
+		F210D2B626EB1B4E008772B5 /* IngredientListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListTests.swift; sourceTree = "<group>"; };
+		F210D2B826EB1E2C008772B5 /* TotalNutritionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalNutritionTests.swift; sourceTree = "<group>"; };
 		F237D93726E91043002EC493 /* NATask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NATask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237D93A26E91043002EC493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F237D93E26E91043002EC493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				F237D95126E91046002EC493 /* NATaskTests.swift */,
+				F210D2B226EB067A008772B5 /* IngredientInputTests.swift */,
+				F210D2B626EB1B4E008772B5 /* IngredientListTests.swift */,
+				F210D2B826EB1E2C008772B5 /* TotalNutritionTests.swift */,
 				F237D95326E91046002EC493 /* Info.plist */,
 			);
 			path = NATaskTests;
@@ -669,6 +678,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F237D95226E91046002EC493 /* NATaskTests.swift in Sources */,
+				F210D2B726EB1B4E008772B5 /* IngredientListTests.swift in Sources */,
+				F210D2B326EB067A008772B5 /* IngredientInputTests.swift in Sources */,
+				F210D2B926EB1E2C008772B5 /* TotalNutritionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
