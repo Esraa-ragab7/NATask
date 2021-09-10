@@ -16,7 +16,7 @@ class IngredientInputViewController: UIViewController {
     @IBOutlet weak var analyzeButton: UIButton!
     
     // MARK: - Properties
-    private var ingredientInputViewModal = IngredientInputViewModal()
+    private(set) var ingredientInputViewModal = IngredientInputViewModal()
     private let disposeBag = DisposeBag()
     
     // MARK: - LifeCycle
