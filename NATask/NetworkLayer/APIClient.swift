@@ -10,6 +10,23 @@ import Alamofire
 
 class APIClient {
     // MARK: - API Requests Method
+    static func statusCodeCheck(statusCode: Int) -> String? {
+        if statusCode == 200 {
+            return nil
+        } else if statusCode == 304 {
+            return "Not Modified"
+        } else if statusCode == 404 {
+            return "Not Found - The specified URL was not found or couldn't be retrieved"
+        } else if statusCode == 409 {
+            return "The provided ETag token does not match the input data"
+        } else if statusCode == 422 {
+            return "Unprocessable Entity - Couldn't parse the recipe or extract the nutritional info"
+        } else if statusCode == 555 {
+            return "Unprocessable Entity - Couldn't parse the recipe or extract the nutritional info"
+        } else {
+            return "Error"
+        }
+    }
     
     // MARK: - get Service With Id
     static func getNutritionDetails(text: String, completion:@escaping(IngredientModal?,Error?)->Void) {
