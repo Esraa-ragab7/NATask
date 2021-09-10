@@ -29,15 +29,18 @@ class APIClient {
     }
     
     // MARK: - get Service With Id
-    static func getNutritionDetails(text: String, completion:@escaping(IngredientModal?,Error?)->Void) {
+    static func getNutritionDetails(text: String, completion:@escaping(IngredientModal?,Error?,String?)->Void) {
         AF.request(APIRouter.getNutritionDetails(text: text)).responseDecodable { (response: DataResponse<IngredientModal, AFError>) in
+            if let statusMessage = APIClient.statusCodeCheck(statusCode:  response.response?.statusCode ?? 0) {
+                completion(nil, nil, statusMessage)
+                return 
+            }
             switch response.result {
             case .success(let ingredientModal):
-                completion(ingredientModal,nil)
+                completion(ingredientModal, nil, nil)
             case .failure(let error):
-                completion(nil, error)
+                completion(nil, error, nil)
             }
         }
     }
-    
 }

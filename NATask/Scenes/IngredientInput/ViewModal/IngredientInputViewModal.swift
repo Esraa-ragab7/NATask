@@ -25,25 +25,38 @@ final class IngredientInputViewModal {
     }
     
     func analyzeText(view: UIViewController) {
-        loadingBehavior.accept(true)
-        let ingredientsByLines = inputText.value.split(separator: "\n")
-        DispatchQueue.global(qos: .background).async { [weak self] in
-            guard let self = self else { return }
-            var ingredients: [IngredientModal] = []
-            for line in ingredientsByLines {
-                self.myGroup.enter()
-                APIClient.getNutritionDetails(text: String(line)) { res, error  in
-                    if var ingredient = res {
-                        ingredient.ingredientText = String(line)
-                        ingredients.append(ingredient)
+        if Connectivity.isConnectedToInternet {
+            loadingBehavior.accept(true)
+            let ingredientsByLines = inputText.value.split(separator: "\n")
+            DispatchQueue.global(qos: .background).async { [weak self] in
+                guard let self = self else { return }
+                var ingredients: [IngredientModal] = []
+                var errorMassage = ""
+                for line in ingredientsByLines {
+                    self.myGroup.enter()
+                    APIClient.getNutritionDetails(text: String(line)) { res, error, massage  in
+                        if var ingredient = res {
+                            ingredient.ingredientText = String(line)
+                            ingredients.append(ingredient)
+                        } else if let massage = massage {
+                            errorMassage = massage
+                        } else if error != nil {
+                            errorMassage = error?.localizedDescription ?? "Error"
+                        }
+                        self.myGroup.leave()
                     }
-                    self.myGroup.leave()
+                }
+                self.myGroup.notify(queue: .main) {
+                    self.loadingBehavior.accept(false)
+                    if ingredients.count > 0 {
+                        self.navigateToIngredientListDetailsViewController(view: view, ingredients: ingredients)
+                    } else {
+                        view.alert(message: errorMassage)
+                    }
                 }
             }
-            self.myGroup.notify(queue: .main) {
-                self.loadingBehavior.accept(false)
-                self.navigateToIngredientListDetailsViewController(view: view, ingredients: ingredients)
-            }
+        } else {
+            view.alert(message: "No Internet Connection")
         }
     }
     
