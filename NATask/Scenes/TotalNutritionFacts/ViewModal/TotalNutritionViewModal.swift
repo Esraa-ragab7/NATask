@@ -28,4 +28,7 @@ final class TotalNutritionViewModal {
         self.factsModelSubject.onNext(facts ?? [])
     }
     
+    func round0f(quantity: Double?) -> String {
+        return String(format: "%.0f", (quantity ?? 0))
+    }
 }

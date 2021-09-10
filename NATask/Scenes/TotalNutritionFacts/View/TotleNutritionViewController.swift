@@ -39,8 +39,9 @@ class TotleNutritionViewController: UIViewController {
                     .items(cellIdentifier: factsCellIdentifierAndNibName,
                            cellType: FactsTableViewCell.self)) { row, fact, cell in
                 cell.factTitleLabel.text = fact.label
-                cell.factValueLabel.text = "\(String(format: "%.0f", (fact.quantity ?? 0))) \(fact.unit ?? "")"
+                cell.factValueLabel.text = "\(self.totalNutritionViewModal.round0f(quantity: fact.quantity)) \(fact.unit ?? "")"
             }
             .disposed(by: disposeBag)
     }
+    
 }
