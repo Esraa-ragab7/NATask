@@ -9,6 +9,7 @@ Nutrition Analysis is an application designed to analyze any recipe and get a de
 * Alamofire - HTTP networking library and JSON serialization
 * IQKeyboardManagerSwift
 * Unit testing
+* Support landscape and portrait
 
 ## Installation 
 * Clone this repo: <br/>
