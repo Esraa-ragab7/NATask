@@ -6,27 +6,54 @@
 //
 
 import XCTest
+@testable import NATask
 
 class IngredientListTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+    var ingredientListDetailsViewController: IngredientListDetailsViewController!
+    var inputText = "2 apples"
+    
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // MARK: - Case1 With Facts
+        callAnalyzeAPI()
+        getFacts()
+        
+        // MARK: - Case2 With Empty Facts
+        
+         /*
+            inputText = "dsfdsfdsf"
+            callAnalyzeAPI()
+            getFacts()
+         */
+    }
+    
+    func getFacts() {
+        let facts = ingredientListDetailsViewController.ingredientLisrDetailsViewModal.getFacts()
+        XCTAssert(facts.count > 1, "No Facts exist") // 1 because by deafult it has calories inserted hard copy
+    }
+    
+    func initIngredientListDetails(ingredients: [IngredientModal])  {
+        ingredientListDetailsViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "IngredientListDetailsViewController") as? IngredientListDetailsViewController
+        if let ingredientListDetailsViewController = ingredientListDetailsViewController {
+            ingredientListDetailsViewController.ingredientLisrDetailsViewModal = IngredientLisrDetailsViewModal(ingredients: ingredients)
+        }
+        
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func callAnalyzeAPI() {
+        let expectation = expectation(description: "Analyze")
+        APIClient.getNutritionDetails(text: inputText) { res, error, massage  in
+            if res != nil {
+                let array = [res!]
+                self.initIngredientListDetails(ingredients: array)
+            }
+            XCTAssert(res != nil, "API Failed")
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 7){ error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
         }
     }
-
 }
