@@ -10,6 +10,8 @@
 		34757D0934E05BB093656A20 /* Pods_NATask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4999DD954DB16363DA0F71 /* Pods_NATask.framework */; };
 		B426AD74732E327B0F7AE39C /* Pods_NATaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AD93849169C60228331952 /* Pods_NATaskTests.framework */; };
 		E447A30776EE671A4AE0D9B0 /* Pods_NATask_NATaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008EBF9A897B6F0C7D88D50E /* Pods_NATask_NATaskUITests.framework */; };
+		F210D2AD26EAE4B0008772B5 /* Connnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2AC26EAE4B0008772B5 /* Connnectivity.swift */; };
+		F210D2AF26EAE5CD008772B5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210D2AE26EAE5CD008772B5 /* UIViewController+Extension.swift */; };
 		F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93A26E91043002EC493 /* AppDelegate.swift */; };
 		F237D93F26E91043002EC493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237D93E26E91043002EC493 /* ViewController.swift */; };
 		F237D94226E91043002EC493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F237D94026E91043002EC493 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		6749E3CD0403F0A0C11DC6C7 /* Pods-NATask-NATaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask-NATaskUITests.release.xcconfig"; path = "Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		80AD75212134D532B535FB5E /* Pods-NATask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask.release.xcconfig"; path = "Target Support Files/Pods-NATask/Pods-NATask.release.xcconfig"; sourceTree = "<group>"; };
 		ADA05BD2D48601685DA1C180 /* Pods-NATask-NATaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NATask-NATaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-NATask-NATaskUITests/Pods-NATask-NATaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F210D2AC26EAE4B0008772B5 /* Connnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connnectivity.swift; sourceTree = "<group>"; };
+		F210D2AE26EAE5CD008772B5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F237D93726E91043002EC493 /* NATask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NATask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237D93A26E91043002EC493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F237D93E26E91043002EC493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 				F237D97F26E998D5002EC493 /* APIClient.swift */,
 				F237D98126E998E3002EC493 /* APIRouter.swift */,
 				F237D98326E998F9002EC493 /* Constants.swift */,
+				F210D2AC26EAE4B0008772B5 /* Connnectivity.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				F237D97626E9809C002EC493 /* UIView+Extension.swift */,
+				F210D2AE26EAE5CD008772B5 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -641,8 +647,10 @@
 				F237D93F26E91043002EC493 /* ViewController.swift in Sources */,
 				F237D99626EA5B10002EC493 /* IngredientTableViewCell.swift in Sources */,
 				F237D98026E998D5002EC493 /* APIClient.swift in Sources */,
+				F210D2AD26EAE4B0008772B5 /* Connnectivity.swift in Sources */,
 				F237D93B26E91043002EC493 /* AppDelegate.swift in Sources */,
 				F237D98826E9A657002EC493 /* FactsModal.swift in Sources */,
+				F210D2AF26EAE5CD008772B5 /* UIViewController+Extension.swift in Sources */,
 				F237D97426E91F81002EC493 /* IngredientInputViewController.swift in Sources */,
 				F237D99226E9DDB0002EC493 /* IngredientListDetailsViewModal.swift in Sources */,
 				F237D97D26E98EF5002EC493 /* LoaderView.swift in Sources */,
