@@ -23,6 +23,13 @@ Nutrition Analysis is an application designed to analyze any recipe and get a de
 * Open the workspace NATask.xcworkspace.
 * Now you can run the project.
 
+
+
+https://user-images.githubusercontent.com/13772702/132813047-d240b953-2046-47ca-b490-93116a47f39d.mp4
+
+
+
+
 ## References
 Nutrition Analysis API Documentation:
 https://developer.edamam.com/edamam-docs-nutrition-api
